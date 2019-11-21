@@ -1,0 +1,6 @@
+C:\Users\kilian\source\repos\DataScience\DataScience\bin\Debug\DataScience.dll
+C:\Users\kilian\source\repos\DataScience\DataScience\bin\Debug\DataScience.pdb
+C:\Users\kilian\source\repos\DataScience\DataScience\obj\Debug\DataScience.csproj.CoreCompileInputs.cache
+C:\Users\kilian\source\repos\DataScience\DataScience\obj\Debug\DataScience.dll
+C:\Users\kilian\source\repos\DataScience\DataScience\obj\Debug\DataScience.pdb
+C:\Users\kilian\source\repos\DataScience\DataScience\obj\Debug\DataScience.csprojResolveAssemblyReference.cache

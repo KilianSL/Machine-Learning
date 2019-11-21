@@ -1,0 +1,8 @@
+C:\Users\kilian\source\repos\logisticRegression\logisticRegression\bin\Debug\logisticRegression.exe.config
+C:\Users\kilian\source\repos\logisticRegression\logisticRegression\bin\Debug\logisticRegression.exe
+C:\Users\kilian\source\repos\logisticRegression\logisticRegression\bin\Debug\logisticRegression.pdb
+C:\Users\kilian\source\repos\logisticRegression\logisticRegression\bin\Debug\DataScience.dll
+C:\Users\kilian\source\repos\logisticRegression\logisticRegression\bin\Debug\DataScience.pdb
+C:\Users\kilian\source\repos\logisticRegression\logisticRegression\obj\Debug\logisticRegression.csproj.CopyComplete
+C:\Users\kilian\source\repos\logisticRegression\logisticRegression\obj\Debug\logisticRegression.exe
+C:\Users\kilian\source\repos\logisticRegression\logisticRegression\obj\Debug\logisticRegression.pdb

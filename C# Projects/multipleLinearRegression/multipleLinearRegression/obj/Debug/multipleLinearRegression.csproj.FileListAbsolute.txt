@@ -1,0 +1,7 @@
+c:\users\kilian\source\repos\multipleLinearRegression\multipleLinearRegression\bin\Debug\multipleLinearRegression.exe.config
+c:\users\kilian\source\repos\multipleLinearRegression\multipleLinearRegression\bin\Debug\multipleLinearRegression.exe
+c:\users\kilian\source\repos\multipleLinearRegression\multipleLinearRegression\bin\Debug\multipleLinearRegression.pdb
+c:\users\kilian\source\repos\multipleLinearRegression\multipleLinearRegression\obj\Debug\multipleLinearRegression.csprojResolveAssemblyReference.cache
+c:\users\kilian\source\repos\multipleLinearRegression\multipleLinearRegression\obj\Debug\multipleLinearRegression.csproj.CoreCompileInputs.cache
+c:\users\kilian\source\repos\multipleLinearRegression\multipleLinearRegression\obj\Debug\multipleLinearRegression.exe
+c:\users\kilian\source\repos\multipleLinearRegression\multipleLinearRegression\obj\Debug\multipleLinearRegression.pdb

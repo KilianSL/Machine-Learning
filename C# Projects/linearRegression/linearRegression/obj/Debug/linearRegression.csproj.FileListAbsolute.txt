@@ -1,0 +1,6 @@
+C:\Users\kilian\source\repos\linearRegression\linearRegression\bin\Debug\linearRegression.exe.config
+C:\Users\kilian\source\repos\linearRegression\linearRegression\bin\Debug\linearRegression.exe
+C:\Users\kilian\source\repos\linearRegression\linearRegression\bin\Debug\linearRegression.pdb
+C:\Users\kilian\source\repos\linearRegression\linearRegression\obj\Debug\linearRegression.exe
+C:\Users\kilian\source\repos\linearRegression\linearRegression\obj\Debug\linearRegression.pdb
+C:\Users\kilian\source\repos\linearRegression\linearRegression\obj\Debug\linearRegression.csprojAssemblyReference.cache

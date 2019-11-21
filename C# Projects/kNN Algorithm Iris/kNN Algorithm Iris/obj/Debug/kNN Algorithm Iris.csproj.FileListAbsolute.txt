@@ -1,0 +1,11 @@
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\bin\Debug\kNN Algorithm Iris.exe.config
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\bin\Debug\kNN Algorithm Iris.exe
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\bin\Debug\kNN Algorithm Iris.pdb
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\obj\Debug\kNN Algorithm Iris.exe
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\obj\Debug\kNN Algorithm Iris.pdb
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\bin\Debug\DataScience.dll
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\bin\Debug\System.ValueTuple.dll
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\bin\Debug\DataScience.pdb
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\bin\Debug\System.ValueTuple.xml
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\obj\Debug\kNN Algorithm Iris.csproj.CopyComplete
+C:\Users\kilian\source\repos\kNN Algorithm Iris\kNN Algorithm Iris\obj\Debug\kNN Algorithm Iris.csprojAssemblyReference.cache

@@ -1,0 +1,14 @@
+C:\Users\kilian\source\repos\descisionTree\bin\Debug\netcoreapp3.0\descisionTree.exe
+C:\Users\kilian\source\repos\descisionTree\bin\Debug\netcoreapp3.0\descisionTree.deps.json
+C:\Users\kilian\source\repos\descisionTree\bin\Debug\netcoreapp3.0\descisionTree.runtimeconfig.json
+C:\Users\kilian\source\repos\descisionTree\bin\Debug\netcoreapp3.0\descisionTree.runtimeconfig.dev.json
+C:\Users\kilian\source\repos\descisionTree\bin\Debug\netcoreapp3.0\descisionTree.dll
+C:\Users\kilian\source\repos\descisionTree\bin\Debug\netcoreapp3.0\descisionTree.pdb
+C:\Users\kilian\source\repos\descisionTree\bin\Debug\netcoreapp3.0\DataScience.dll
+C:\Users\kilian\source\repos\descisionTree\bin\Debug\netcoreapp3.0\DataScience.pdb
+C:\Users\kilian\source\repos\descisionTree\obj\Debug\netcoreapp3.0\descisionTree.csprojAssemblyReference.cache
+C:\Users\kilian\source\repos\descisionTree\obj\Debug\netcoreapp3.0\descisionTree.AssemblyInfoInputs.cache
+C:\Users\kilian\source\repos\descisionTree\obj\Debug\netcoreapp3.0\descisionTree.AssemblyInfo.cs
+C:\Users\kilian\source\repos\descisionTree\obj\Debug\netcoreapp3.0\descisionTree.csproj.CopyComplete
+C:\Users\kilian\source\repos\descisionTree\obj\Debug\netcoreapp3.0\descisionTree.dll
+C:\Users\kilian\source\repos\descisionTree\obj\Debug\netcoreapp3.0\descisionTree.pdb
