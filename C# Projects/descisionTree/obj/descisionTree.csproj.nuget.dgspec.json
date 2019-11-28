@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kilian\\source\\repos\\descisionTree\\descisionTree.csproj": {}
+    "C:\\Users\\kilian\\source\\Git Repos\\Machine-Learning\\C# Projects\\descisionTree\\descisionTree.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kilian\\source\\repos\\descisionTree\\descisionTree.csproj": {
+    "C:\\Users\\kilian\\source\\Git Repos\\Machine-Learning\\C# Projects\\descisionTree\\descisionTree.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kilian\\source\\repos\\descisionTree\\descisionTree.csproj",
+        "projectUniqueName": "C:\\Users\\kilian\\source\\Git Repos\\Machine-Learning\\C# Projects\\descisionTree\\descisionTree.csproj",
         "projectName": "descisionTree",
-        "projectPath": "C:\\Users\\kilian\\source\\repos\\descisionTree\\descisionTree.csproj",
+        "projectPath": "C:\\Users\\kilian\\source\\Git Repos\\Machine-Learning\\C# Projects\\descisionTree\\descisionTree.csproj",
         "packagesPath": "C:\\Users\\kilian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kilian\\source\\repos\\descisionTree\\obj\\",
+        "outputPath": "C:\\Users\\kilian\\source\\Git Repos\\Machine-Learning\\C# Projects\\descisionTree\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

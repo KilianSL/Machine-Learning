@@ -12,8 +12,8 @@ namespace descisionTree
         public int layer { get; set; } //the layer of the tree that the node sits on (0 = root node) 
         public Node parent { get; set; }  //the parent node of the node (null for root node)
         public double splitpoint; //the point to split on (or value if it is a leaf)
-        public object left_child { get; set; }   //the node for data that falls below the split point
-        public object right_child { get; set; }  //the node for data that falls above the splitpoint
+        public Node left_child { get; set; }   //the node for data that falls below the split point
+        public Node right_child { get; set; }  //the node for data that falls above the splitpoint
         public double[,] data;  //the training data for the node
         public double score = 0;  //the Gini score of the node
         public Node(double[,] d, int l, Node p=null, string t="node", int v=0)  //sets the data that the node stores, depending on the type of node. Sets value if it is a leaf
@@ -146,13 +146,14 @@ namespace descisionTree
         int maxDepth { get; set; }
         int depth = 1;
         double minError;
+        private Node[] tree { get; }
         public Tree(double[,] dset, int mDepth, double minE=1)
         {
             minError = minE;
             dataset = dset;
             maxDepth = mDepth;
             Console.WriteLine("Building tree...");
-            Node[] tree = buildTree();
+            tree = buildTree();
         }
 
         private Node[] buildTree()
@@ -336,6 +337,38 @@ namespace descisionTree
             return (L, R);
         }
 
+        public void makePrediction(double[] data)  //makes a prediction for the given data points
+        {
+            Node n = tree[0];
+            while (n.type == "node")
+            {
+                if (data[n.split_varible] < n.splitpoint)
+                {
+                    if (n.left_child != null)
+                    {
+                        n = n.left_child;
+                    }
+                    else
+                    {
+                        n = n.right_child;
+                    }   
+                }
+                else
+                {
+                    if (n.right_child != null)
+                    {
+                        n = n.right_child;
+                    }
+                    else
+                    {
+                        n = n.left_child;
+                    }
+                }
+            }
+            Console.WriteLine("Predicated Value: {0}  |  Actual Value: {1}", n.splitpoint, data[data.Length - 1]);
+            
+        }
+
     }
 
 
@@ -345,22 +378,42 @@ namespace descisionTree
     class Program
     {
 
-        static double testTree(double[,] train, Tree tree)
+        static double[,] loadData(string path)
         {
-            double score = 0;
-            return score;
+            var csv = new DataScience.CSVReader();
+            double[] x = csv.ReadDouble(path, 0);
+            double[,] data = new double[x.Length, 5];
+            for (int i = 0; i < data.GetLength(1); i++)
+            {
+                x = csv.ReadDouble(path, i);
+                for (int j = 0; j < x.Length; j++)
+                {
+                    data[j, i] = x[j];
+                }
+            }
+            return data;
+        }
+
+        static void testTree(double[,] data, Tree tree)
+        {
+            for (int i = 0; i < data.GetLength(0); i++)
+            {
+                double[] x = new double[data.GetLength(1)];
+                for (int j = 0; j < x.Length; j++)
+                {
+                    x[j] = data[i, j];
+                }
+                tree.makePrediction(x);
+            }
         }
 
         static void Main(string[] args)
         {
-            double[,] dat = new double[,] { { 1, 0 }, { 2, 0 }, { 3, 0 }, { 4, 1 }, { 5, 1 }, { 6, 1 } };
-            double[,] dat1 = new double[,] { { 5.1, 3.5, 1.4, 0.2, 0 }, { 4.9, 3.0, 1.4, 0.2, 0 }, { 4.7, 3.2, 1.3, 0.2, 0 }, { 4.6, 3.1, 1.5, 0.2, 0 }, { 5.0, 3.6, 1.4, 0.2, 0 }, { 5.4, 3.9, 1.7, 0.4, 0 }, { 5.4, 3.0, 4.5, 1.5, 1 }, { 6.0, 3.4, 4.5, 1.6, 1 }, { 6.7, 3.1, 4.7, 1.5, 1 }, { 5.5, 2.5, 4.0, 1.3, 1 }, { 6.1, 3.0, 4.6, 1.4, 1 }, { 5.6, 2.7, 4.2, 1.3, 1 } };
-            Tree tree = new Tree(dat1, 1);
-            //var n1 = new Node(dat1, 0, null);
-            //Console.WriteLine("Selected Split Attribute: {0}", n1.split_varible);
-            //Console.WriteLine("Selected Split Point: {0}", n1.splitpoint);
-            //Console.WriteLine("Node Score: {0}", n1.score);
-            //Console.WriteLine();
+            double[,] data = loadData(@"C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\descisionTree\banknote.csv");
+            double[,] testData = loadData(@"C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\descisionTree\testData.csv");
+            var tree = new Tree(data, 5);
+            testTree(testData, tree);
+
         }
     }
 }
