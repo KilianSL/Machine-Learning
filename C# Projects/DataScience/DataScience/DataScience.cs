@@ -6,54 +6,45 @@ using System.Threading.Tasks;
 
 namespace DataScience
 {
-    public class CSVReader
+    public class CSVReader<T> where T : IConvertible
     {
-        
-        public double[] ReadDouble(string path, int column)
-        {
-            using (var reader = new System.IO.StreamReader(path))
-            {
-                List<double> listX = new List<double>();
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    var values = line.Split(',');
-                    listX.Add(double.Parse(values[column]));
-                }
-                return listX.ToArray();
-            }
-        }
 
-        public string[] ReadString(string path, int column)
+        private int getFileLength(string path)
         {
             using (var reader = new System.IO.StreamReader(path))
             {
-                List<string> listX = new List<string>();
+                List<T> colList = new List<T>();
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
                     var values = line.Split(',');
-                    listX.Add(values[column]);
+                    colList.Add((T)Convert.ChangeType(line[0], typeof(T)));
                 }
-                return listX.ToArray();
+                reader.Close();
+                return colList.Count();
             }
+            
         }
-
-        public int[] ReadInteger(string path, int column)
+        public T[,] ReadData(string path, int columns)
         {
+            T[,] data = new T[getFileLength(path), columns];
             using (var reader = new System.IO.StreamReader(path))
             {
-                List<int> listX = new List<int>();
+                List<T> colList = new List<T>();
+                int row = 0;
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
                     var values = line.Split(',');
-                    listX.Add(int.Parse(values[column]));
+                    for (int i = 0; i < columns; i++)
+                    {
+                        data[row, i] = (T)Convert.ChangeType(line[i], typeof(T));
+                    }
+                    row += 1;
                 }
-                return listX.ToArray();
             }
+            return data;
         }
-    }
 
     public class BivariateLinearRegression   //subroutines that fit and test the model y = ax + b in the form [a,b]
     {
