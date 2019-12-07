@@ -4,3 +4,8 @@ C:\Users\kilian\source\repos\DataScience\DataScience\obj\Debug\DataScience.cspro
 C:\Users\kilian\source\repos\DataScience\DataScience\obj\Debug\DataScience.dll
 C:\Users\kilian\source\repos\DataScience\DataScience\obj\Debug\DataScience.pdb
 C:\Users\kilian\source\repos\DataScience\DataScience\obj\Debug\DataScience.csprojResolveAssemblyReference.cache
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\DataScience\DataScience\obj\Debug\DataScience.csprojAssemblyReference.cache
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\DataScience\DataScience\obj\Debug\DataScience.dll
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\DataScience\DataScience\obj\Debug\DataScience.pdb
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\DataScience\DataScience\bin\Debug\DataScience.dll
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\DataScience\DataScience\bin\Debug\DataScience.pdb
