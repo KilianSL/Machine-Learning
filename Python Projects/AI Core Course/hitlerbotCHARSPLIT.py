@@ -47,8 +47,8 @@ class ToLongTensor():
 		
 from torch.utils.data import DataLoader
 
-batch_size = 32
-chunk_size = 150 #the length of the sequences which we will optimize over
+batch_size = 10
+chunk_size = 50 #the length of the sequences which we will optimize over
 
 train_data = CharRNNDataset('data/data.txt', chunk_size=chunk_size, transform=ToLongTensor()) #instantiate dataset from class defined above
 x, y = train_data[0]
@@ -88,7 +88,7 @@ class CharRNN(torch.nn.Module):
 		
 #hyper-params
 lr = 0.001
-epochs = 50
+epochs = 500
 embedding_len = 400
 hidden_size = 128
 
