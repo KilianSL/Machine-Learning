@@ -1,0 +1,11 @@
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\bin\Debug\netcoreapp3.1\Basic_Perceptron.exe
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\bin\Debug\netcoreapp3.1\Basic_Perceptron.deps.json
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\bin\Debug\netcoreapp3.1\Basic_Perceptron.runtimeconfig.json
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\bin\Debug\netcoreapp3.1\Basic_Perceptron.runtimeconfig.dev.json
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\bin\Debug\netcoreapp3.1\Basic_Perceptron.dll
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\bin\Debug\netcoreapp3.1\Basic_Perceptron.pdb
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\obj\Debug\netcoreapp3.1\Basic_Perceptron.csprojAssemblyReference.cache
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\obj\Debug\netcoreapp3.1\Basic_Perceptron.AssemblyInfoInputs.cache
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\obj\Debug\netcoreapp3.1\Basic_Perceptron.AssemblyInfo.cs
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\obj\Debug\netcoreapp3.1\Basic_Perceptron.dll
+C:\Users\kilian\source\Git Repos\Machine-Learning\C# Projects\Basic_Perceptron\obj\Debug\netcoreapp3.1\Basic_Perceptron.pdb
