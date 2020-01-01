@@ -147,30 +147,33 @@ namespace PNIS.Matrix
                 }
             }
         }
-        public void Transform(Matrix m)
+        public void Transform(Matrix t)  //Transforms by the tensor t, such that the final tensor is t * this_tensor
         {
-            if (this.GetLength(0) == m.GetLength(1))
+
+            if (t.GetLength(1) == this.shape[0])
             {
-                float[,] result = new float[m.GetLength(0), this.GetLength(1)];
-                shape = new int[] { result.GetLength(0), result.GetLength(1) };
-                Size = result.Length;
-                for (int i = 0; i < result.GetLength(0); i++)
+                float[,] results = new float[t.GetLength(0), this.shape[1]];
+                for (int i = 0; i < results.GetLength(0); i++)
                 {
-                    for (int j = 0; j < result.GetLength(1); j++)
+                    for (int j = 0; j < results.GetLength(1); j++)
                     {
                         float v = 0;
-                        for (int k = 0; k < this.GetLength(0); k++)
+                        for (int k = 0; k < shape[0]; k++)
                         {
-                            v += m[i, k] + this[i, k];
+                            v += t[i, k] * this.data[k, j];
                         }
+                        results[i, j] = v;
                     }
                 }
+                this.data = results;
+                this.shape = new int[] { results.GetLength(0), results.GetLength(1) };
             }
             else
             {
-                throw new Exception("Wrong dimensions for transformation");
+                Console.WriteLine("Wrong dimensions for transformation");
             }
         }
+
         public void Transform(float a)
         {
             for (int i = 0; i < shape[0]; i++)
