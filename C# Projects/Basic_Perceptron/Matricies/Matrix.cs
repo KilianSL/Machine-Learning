@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PNIS.Matrix
 {
-    class Matrix
+    struct Matrix
     {
         //Fields
         private int[] shape;
@@ -67,6 +67,11 @@ namespace PNIS.Matrix
         {
             get { return data[i, j]; }
             set { data[i, j] = value; }
+        }
+        public float this[int i]
+        {
+            get { return data[i, 0]; }
+            set { data[i, 0] = value; }
         }
         public static Matrix operator +(Matrix A, Matrix B)
         {

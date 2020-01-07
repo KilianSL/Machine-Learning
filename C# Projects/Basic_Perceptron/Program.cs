@@ -12,7 +12,7 @@ namespace Basic_Perceptron
             var x = new Matrix(data);
             var y = new Matrix(labels);
             var model = new Perceptron.Perceptron(8);
-            model.Train(x, y, 1);
+            model.Train(x, y, 10000, 0.1f);
         }
     }
 }
